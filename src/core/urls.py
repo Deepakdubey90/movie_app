@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from .views import IndexView
+from .views import IndexView, ApiView
 from django.views.generic import TemplateView
 from django.views.static import serve
 from django.conf import settings
@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^user/auth', AuthUserViewSet.as_view()),
     url(r'^user/me', MeViewSet.as_view()),
     url(r'^$', IndexView.as_view()),
+    url(r'^api', ApiView.as_view()),
     url(r'^', include(router.urls)),
     url(r'authentication/', include('rest_framework.urls',
 				    namespace='rest_framework')),

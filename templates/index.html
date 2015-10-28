@@ -1,32 +1,329 @@
-<html lang="en" ng-app="Anonymizer">
-  <head>
-    <style>
-      a, a:visited, a:hover, a:active {
-      color: inherit;
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css"> -->
-    <link rel="stylesheet" href="https://gitcdn.xyz/repo/angular/bower-material/10.10.1-rc2/angular-material.min.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="vendor/css/default.css">
-    <link rel="stylesheet" href="vendor/css/prettify.css">
-    <link rel="stylesheet" href="vendor/js/bootstrap-2.1.1-min.js">
-    <link rel="stylesheet" href="vendor/js/jquery-1.8.1-min.js">
-    <link rel="stylesheet" href="vendor/js/prettify-1.0.js">
-    <link rel="stylesheet" href="vendor/js/theme.js">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.1/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.5.0/assets/css/emojione.min.css"/>
-    <meta name="viewport" content="initial-scale=1" />
-  </head>
-  <body>
-    <h1><center>welcome</center></h1>
-    <center><p style="color:red">Hey Guy's this page is under construction. Please Login through Custom-Authentication to view all API.</p></center></br>
-    <center><a href="http://ajency-movie-api.herokuapp.com/user/auth">Click to View User Custom-Authenticate(Login)</a></center></br>
-    <center><a href="http://ajency-movie-api.herokuapp.com/admin/login/">Click here to go on Django Admin Page</a></center></br>
-    <center><a href="http://ajency-movie-api.herokuapp.com/user/">Click to View User API</a></center></br>
-    <center><a href="http://ajency-movie-api.herokuapp.com/movie/">Click to View Movie API</a></center></br>
-    <center><a href="http://ajency-movie-api.herokuapp.com/category/">Click to View Movie-Type API</a></center></br>
-  </body>
+
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta property='fb:app_id' content='955517544488844' />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Movies - ShortFilmWindow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="pingback" href="http://www.shortfilmwindow.com/xmlrpc.php">
+  
+  <link rel="shortcut icon" href="http://www.shortfilmwindow.com/wp-content/themes/short-film/favicon.ico" />
+  
+  <!-- wordpress head functions -->
+  
+  <!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+  <link rel="canonical" href="#" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Movies - ShortFilmWindow"/>
+  <meta name="twitter:domain" content="ShortFilmWindow"/>
+  
+  <link rel='stylesheet' id='formidable-css'  href='http://www.shortfilmwindow.com/wp-content/uploads/formidable/css/formidablepro.css?ver=2.0.08' type='text/css' media='all' />
+  <link rel='stylesheet' id='easy_author_image-css'  href='http://www.shortfilmwindow.com/wp-content/plugins/easy-author-image/css/easy-author-image.css?ver=4.1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='aal-style-css'  href='http://www.shortfilmwindow.com/wp-content/plugins/ajency-author-likes/assets/css/aal-style.css?ver=4.1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='mailchimp-for-wp-checkbox-css'  href='http://www.shortfilmwindow.com/wp-content/plugins/mailchimp-for-wp/assets/css/checkbox.min.css?ver=2.3.4' type='text/css' media='all' />
+  <link rel='stylesheet' id='theme_css-css'  href='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/css/theme-child.css?ver=4.1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='like_css-css'  href='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/css/like-styles.css?ver=4.1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='mailchimp-for-wp-form-theme-light-css'  href='http://www.shortfilmwindow.com/wp-content/plugins/mailchimp-for-wp/assets/css/form-theme-light.min.css?ver=2.3.4' type='text/css' media='all' />
+  <link rel='stylesheet' id='taxonomy-image-plugin-public-css'  href='http://www.shortfilmwindow.com/wp-content/plugins/taxonomy-images/style.css?ver=0.8.0' type='text/css' media='screen' />
+  
+</script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+  <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.2.0/mobile-detect.min.js?ver=4.1.6'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/readmore/readmore.js?ver=1.2'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/post-like.js?ver=4.1.6'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/jquery.infinitescroll.min.js?ver=4.1.6'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/bower_components/bootstrap/dist/js/bootstrap.js?ver=1.2'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/library/dist/js/scripts.d1e3d952.min.js?ver=1.2'></script>
+  <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/bower_components/modernizer/modernizr.js?ver=1.2'></script>
+  <link rel='shortlink' href='http://www.shortfilmwindow.com/?p=10' />
+  <link rel='https://github.com/WP-API/WP-API' href='http://www.shortfilmwindow.com/wp-json' />
+  <style type="text/css">	.ssba {
+    
+    
+    
+    
+    }
+    .ssba img		
+    { 	
+    width: 35px !important;
+    padding: 6px;
+    border:  0;
+    box-shadow: none !important;
+    display: inline !important;
+    vertical-align: middle;
+    }
+    .ssba, .ssba a		
+    {
+    text-decoration:none;
+    background: none;
+    font-family: Indie Flower;
+    font-size: 	20px;
+    
+    
+    }</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+  <style type="text/css">.mc4wp-form input[name="_mc4wp_required_but_not_really"] { display: none !important; }</style>		<!-- end of wordpress head -->
+  <!-- IE8 fallback moved below head to work properly. Added respond as well. Tested to work. -->
+  <!-- media-queries.js (fallback) -->
+  <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+
+  <!-- html5.js -->
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+  <!-- respond.js -->
+  <!--[if lt IE 9]>
+      <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+      <![endif]-->
+
+  <!-- Google Analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52449074-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- Google Analytics -->
+
+</head>
+
+<body class="page page-id-10 page-template page-template-category_template page-template-category_template-php">
+
+  <!-- for facebook like in header & facebook follow in footer-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=955517544488844";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <!-- for youtube subscribe in footer-->
+  <script src="https://apis.google.com/js/platform.js"></script>
+
+
+  <div class="wrapper" style="position: relative;">
+
+    <div class="header">
+      <div class="header-links">
+	<div class="links">
+
+ 	  <!-- <a href="/wp-login.php">LOGIN</a> -->
+	  <!-- <span>|</span>
+	       <a href="#">SEARCH</a> -->
+	</div>
+	<div class="social-links">
+
+
+	  
+
+	  <div class="fb link">
+	    <div class="icon">
+	      <i class="fa fa-facebook fa-lg fa-fw"></i>
+	    </div>
+	    <div class="action">
+
+	      <!--
+		  <div class="fb-like" data-href="https://www.facebook.com/pages/My_sfw_fb_page/980939678591959?ref=aymt_homepage_panel" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+		  -->
+
+	      <div class="fb-like" data-href="https://www.facebook.com/Shortfilmwindow" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
+	      <!-- <small>Like</small> -->
+	    </div>
+	  </div>
+
+	  <div class="clearfix"></div>
+
+	  <div class="twitter link">
+	    <div class="action">
+	      <!--
+		  <a href="https://twitter.com/ajency123" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>
+		  -->
+	      <a href="https://twitter.com/shortfilmwindow" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>
+
+	      <!-- <small>Follow</small> -->
+	    </div>
+	    <div class="icon">
+	      <i class="fa fa-twitter fa-lg fa-fw"></i>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="logo">
+
+	<a href="#">
+	  <img src="http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/img/logo.png" class="img-responsive fulllogo">
+	  <img src="http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/img/logo_smallerscreen.png" class="img-responsive onlyreel">
+	</a>
+      </div>
+      <div class="clearfix"></div>
+      <div class="sub-header">
+        <div class="navbar navbar-default navbar-fi xed-top">
+	  <div class="container">
+
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </button>
+
+	    </div>
+	    <div class="collapse navbar-collapse navbar-responsive-collapse">
+	      <ul id="menu-main-menu-1" class="menu"><li ><a href="#">Home</a></li>
+		<li><a href="#">Movies</a></li>
+		<li><a href="#">Articles</a></li>
+		<li><a href="#">Playlists</a></li>
+		<li><a href="#">Submit Film</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="/api">API</a></li>
+	      </ul>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Content-->
+    <div class="container header-space">
+      <div class="content-wrapper">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="brand">EXPLORE</h2>
+          </div>
+	  <div class="col-md-3 col-md-offset-3 col-sm-12">
+	    <div class="m-t-20 search_menu">
+
+	      <div class="form-group">
+                <input type="text" class="form-control search" value="" placeholder="Search"/>
+                <i class="fa fa-search"></i>
+              </div>
+
+            </div>
+	  </div>
+        </div>
+
+        <hr class="m-t-0">
+
+        <div class="row pushin">
+          <div class="col-md-5">
+            <h5 class="un">FILTER BY</h5>
+
+	    <div class="form-horizontal">
+              <div class="form-group">
+                <label for="" class="col-md-3 control-label"><em>Genre:</em> </label>
+                <div class="col-md-9">
+                  <select name="genre" id="genre">
+                    <option value="">All</option>
+                    <option value="7">Horror</option><option value="9">Sci-Fi</option><option value="2">Indian</option><option value="4">Thriller</option><option value="11">Award Winning</option><option value="5">Animation</option><option value="8">Romance</option><option value="6">Comedy</option><option value="14">Famous Directors</option><option value="10">Fantasy</option><option value="12">Experimental</option><option value="13">Heart Warming</option><option value="15">Dark</option><option value="22">Drama</option><option value="33">Disaster Porn</option><option value="34">Short Doc</option><option value="35">Oscar Winning</option><option value="44">Family</option><option value="55">Surreal</option><option value="57">Space</option><option value="59">Offline</option><option value="1">Uncategorized</option>                                    </select>
+                </div>
+              </div>
+            </div>
+
+	    <div class="form-horizontal">
+
+	      <div class="form-group">
+
+		
+		<label for="" class="col-md-3 control-label"><em>Language:</em> </label>
+                <div class="col-md-9">
+
+		  <select name="language" id="language">
+
+		    <option value="">All</option>
+
+		    <option value="20">French</option><option value="21">Romanian</option><option value="24">Hindi</option><option value="25">English</option><option value="26">Japanese</option><option value="37">German</option><option value="39">Korean</option><option value="41">Spanish</option><option value="43">Mandarin</option><option value="46">Swedish</option><option value="49">Arabic</option><option value="52">Persian</option><option value="53">Catalan</option><option value="56">Marathi</option><option value="58">Assamese</option><option value="65">Bengali</option><option value="74">Danish</option>
+		  </select>
+
+		</div>
+              </div>
+
+	    </div>
+
+	  </div>
+
+	  <div class="col-md-4 col-md-offset-3 padd-68">
+
+	    <div class="form-group row form-horizontal">
+	      <label for="" class="col-md-3 control-label"><em>Sort by:</em> </label>
+              <div class="col-md-9">
+                <select name="sort" id="sort">
+                  <option value="1">Freshness</option>
+                  <option value="2">Popularity</option>
+                  <option value="3">Length</option>
+                </select>
+              </div>
+	    </div>
+
+	    <div class="row opts">
+              <div class="col-md-12">
+
+                <a href="#" id="gridoption" class="option" title="Grid"><i class="fa fa-th-large fa-3x"></i></a>
+
+
+                <a href="#" id="listoption"  class="option"title="List"><i class="fa fa-th-list fa-3x"></i></a>
+
+
+                <a href="#" id="couchoption" class="option" title="Couch"><i class="fa fa-list-alt fa-3x"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+	<div class="spacer-40"></div><div class="loader"></div>
+
+	<div class="search-results-message">
+	</div>
+
+	<div class="container-fluid footer-bar">
+	  &copy; ShortFilmWindow | All Rights Reserved.
+	</div>
+</footer>
+
+<script type='text/javascript'>
+      /* <![CDATA[ */
+var ajax_var = {"url":"http:\/\/www.shortfilmwindow.com\/wp-admin\/admin-ajax.php","nonce":"fa1245ef6e"};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/post-like.min.js?ver=1.0'></script>
+    <script type='text/javascript'>
+      /* <![CDATA[ */
+var aal = {"ajaxurl":"http:\/\/www.shortfilmwindow.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/plugins/ajency-author-likes/assets/js/aal-script.js?ver=4.1.6'></script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/flyLabel/flyLabel.min.js?ver=4.1.6'></script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/slick.min.js?ver=4.1.6'></script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/classie/classie.js?ver=4.1.6'></script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/video-js/video.js?ver=4.1.6'></script>
+    <script type='text/javascript' src='http://www.shortfilmwindow.com/wp-content/themes/short-film/assets/js/custom.js?ver=4.1.6'></script>
+</body>
 </html>
+
+
+
+
+
